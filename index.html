@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="style.css">       
+        <meta charset="UTF-8">
     </head>
     <body>
         <div class="container">
@@ -11,13 +11,33 @@
                     <th>Title</th>
                     <th>Author</th>
                     <th>Pages</th>
-                    <th>Status</th>
-                </tr>
-                <tr id="one">
-                </tr>
-                <tr id="two">
+                    <th colspan="2" style="text-align: left;">Status</th>
                 </tr>
             </table>
+        </div>
+        <div class="button">
+            <button type="button" class="new">Add New Book</button>
+        </div>
+        <div class="form-container" style="display: none;">
+            <form class="book">
+                <h4>New Book</h4>
+                <label for="title">Title</label><br>
+                <input type="text" name="title"><br><br>
+
+                <label for="author">Author</label><br>
+                <input type="text" name="author"><br><br>
+
+                <label for="pages">Pages</label><br>
+                <input type="text" name="pages"><br><br>
+
+                <label for="status">Status</label><br>
+                <select name="status">
+                    <option value="read">Read</option>
+                    <option value="not-read">Not read</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
         <script src="library.js"></script>
     </body>

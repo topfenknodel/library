@@ -5,20 +5,55 @@
     position: relative;
     margin: auto;
     top: 150px;
-    background-color: papayawhip;
+    
 }
 
 table {
     width: 100%;
     text-align: center;
     font-size: 16px;
-    color: peru;
-    
+    color: #f0f3bd;
 }
 
 table, th, td {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #f0f3bd;
     border-collapse: collapse;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 12px;
+}
+
+th {
+    background-color: #00a896;
+}
+
+td {
+    background-color: #02c39a;
+}
+
+#new {
+    border: 1px transparent;
+    color: #f0f3bd;
+    background-color: #02c39a;
+    cursor: pointer;
+}
+
+.book {
+    display: block;
+    position: relative;
+    
+}
+
+select {
+    width: 278px;
+}
+
+.form-container {
+    display: none;
+    background-color: #00a896;
+    width: 300px;
+}
+
+.delBt, .statBt {
+    border: #00a896;
+    background-color: #00a896;
+    color: #f0f3bd;
 }
