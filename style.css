@@ -5,35 +5,49 @@
     position: relative;
     margin: auto;
     top: 150px;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 table {
-    width: 100%;
+    width: 550px;
     text-align: center;
     font-size: 16px;
-    color: #f0f3bd;
+    color: #999999;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.10),
+     0px 5px 10px rgba(0,0,0,0.05),
+     0px 10px 10px rgba(0,0,0,0.05),
+     0px 15px 10px rgba(0,0,0,0.05);
+    border-radius: 5px;
 }
 
 table, th, td {
-    border: 1px solid #f0f3bd;
+    border: 1px solid #eeeeee;
     border-collapse: collapse;
     padding: 12px;
 }
 
 th {
-    background-color: #00a896;
+    background-color: #00cccc;
+    color: #ffffff;
 }
 
 td {
-    background-color: #02c39a;
+    background-color: #ffffff;
 }
 
-#new {
+.new {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 85px;
     border: 1px transparent;
-    color: #f0f3bd;
-    background-color: #02c39a;
+    border-radius: 2px;
+    color: #ffffff;
+    background-color: #00cccc;
     cursor: pointer;
+    box-shadow: 2px 2px 10px #cccccc;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .book {
@@ -42,18 +56,50 @@ td {
     
 }
 
-select {
-    width: 278px;
-}
-
 .form-container {
     display: none;
-    background-color: #00a896;
-    width: 300px;
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px;
+    box-shadow: 2px 2px 10px #cccccc;
+    top: 120px;
+    left: 20px;
+    background-color: #f3f3f3;
+    color: #00cccc;
+    width: auto;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
 }
 
 .delBt, .statBt {
-    border: #00a896;
-    background-color: #00a896;
-    color: #f0f3bd;
+    border-radius: 2px;
+    width: 95px;
+    border: #00cccc;
+    background-color: #70dfdf;
+    color: #ffffff;
+}
+
+.sBt {
+    border-radius: 2px;
+    border: #00cccc;
+    background-color: #00cccc;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+select {
+    border: 1px solid #999999;
+    background-color:#ffffff;
+    border-radius: 2px;
+    width: 269px;
+    font-size: 17px;
+}
+
+input {
+    border: 1px solid #999999;
+    border-radius: 2px;
+    background-color: #ffffff;
+    width: 265px;
+    font-size: 17px;
 }
